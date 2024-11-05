@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Formulario Curriculum</title>
+
+</head>
+
+<style>
+
+    .formatotitulo{
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .formatocurriculum{
+        font-family: sans-serif;
+    }
+    .mismalinea {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .mismalineaidiomas {
+        display: inline-block;
+        margin-right: 50px;
+    }
+</style>
+<body class="formatocurriculum">
+	<h1 class="formatotitulo">Formulario Curriculum</h1>
+	<hr></hr>
+    <h3 style="font-style: italic;">Datos personales</h3>
+    <div class = "mismalinea">
+        <p><label for="nombre">Nombre</label></p>
+        <input type="text" id="nombre" name="nombre" size="30" maxlength="20"/></p>
+    </div>
+    <div class = "mismalinea">
+        <p><label for="apellidos">Apellidos</label></p>
+        <input type="text" id="apellidos" name="apellidos" size="30" maxlength="30"/></p>
+    </div>
+    <div class = "mismalinea">
+        <p><label for="telefono">Teléfono</label></p>
+        <input type="text" id="telefono" name="telefono" size="30" maxlength="9"/></p>
+    </div>
+    <div class = "mismalinea">
+        <p><label for="direccion">Dirección</label></p>
+        <input type="text" id="direccion" name="direccion" size="30" maxlength="40"/></p>
+    </div>
+    <div class = "mismalinea">
+        <p><label for="correo">Correo</label></p>
+        <input type="text" id="correo" name="correo" size="30" maxlength="40"/></p>
+    </div>
+    <hr></hr>
+    <h3 style="font-style: italic;">Datos académicos</h3>
+    <p><b>¿Que títulos académicos posees?</b></p>
+    <p>
+    <input type="checkbox" id="primaria" name="primaria">
+    <label for="primaria">Educación Primaria</label><br/>
+    <input type="checkbox" id="secundaria" name="secundaria">
+    <label for="secundaria">Educación Secundaria</label><br/>
+    <input type="checkbox" id="bachillerato" name="bachillerato">
+    <label for="bachillerato">Bachillerato</label><br/>
+    <input type="checkbox" id="cfgm" name="cfgm">
+    <label for="cfgm">Ciclo Formatio de Grado Medio</label><br/>
+    <input type="checkbox" id="cfgs" name="cfgs">
+    <label for="cfgs">Ciclo Formatio de Grado Superior</label><br/>
+    <input type="checkbox" id="universidad" name="universidad">
+    <label for="universidad">Educación Universitaria</label><br/>
+    <input type="checkbox" id="master" name="master">
+    <label for="master">Master Postgrado</label><br/>
+    </p>
+    <hr></hr>
+    <h3 style="font-style: italic;">Experiencia laboral</h3>
+    <p>
+    <p><label for="experiencia"><b>¿Has trabajado en algo?</b></label></p>
+    <select id="experiencia" name="experiencia">
+    <option>Salud</option>
+    <option>Finanzas</option>
+    <option>Educación</option>
+    <option>Mecánica</option>
+    <option>Tecnología</option>
+    </select>
+    <hr></hr>
+    <h3 style="font-style: italic;">Idiomas</h3>
+    <p><b>¿Que idiomas hablas?</b></p>
+    <p></p>
+    <div class = "mismalineaidiomas">
+    <p><b>Inglés</b></p>
+    <p>Nivel hablado</p>
+    <p>
+		<input type="radio" id="bajoingles" name="so" value="bajoingles" checked="checked">
+		<label for="bajoingles">Bajo</label>
+		<input type="radio" id="medioingles" name="so" value="medioingles">
+		<label for="medioingles">Medio</label>
+		<input type="radio" id="altoingles" name="so" value="altoingles">
+		<label for="altoingles">Alto</label>
+	</p>
+    <p>Nivel escrito</p>
+    <p>
+		<input type="radio" id="bajo" name="escrito" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="escrito" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="escrito" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+    </div>
+
+    <div class = "mismalineaidiomas">
+    <p><b>Francés</b></p>
+    <p>Nivel hablado</p>
+    <p>
+		<input type="radio" id="bajo" name="habladofr" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="habladofr" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="habladofr" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+    <p>Nivel escrito</p>
+    <p>
+		<input type="radio" id="bajo" name="escritofr" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="escritofr" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="escritofr" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+   </div>
+
+   <div class = "mismalineaidiomas">
+    <p><b>Alemán</b></p>
+    <p>Nivel hablado</p>
+    <p>
+		<input type="radio" id="bajo" name="habladoal" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="habladoal" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="habladoal" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+    <p>Nivel escrito</p>
+    <p>
+		<input type="radio" id="bajo" name="escritoal" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="escritoal" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="escritoal" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+   </div>
+
+   <div class = "mismalineaidiomas">
+    <p><b>Portugués</b></p>
+    <p>Nivel hablado</p>
+    <p>
+		<input type="radio" id="bajo" name="escritopor" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="escritopor" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="escritopor" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+    <p>Nivel escrito</p>
+    <p>
+		<input type="radio" id="bajo" name="habladopor" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="habladopor" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="habladopor" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+   </div>
+
+   <div class = "mismalineaidiomas">
+    <p><b>Ruso</b></p>
+    <p>Nivel hablado</p>
+    <p>
+		<input type="radio" id="bajo" name="habladoru" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="habladoru" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="habladoru" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+    <p>Nivel escrito</p>
+    <p>
+		<input type="radio" id="bajo" name="escritoru" value="bajo" checked="checked">
+		<label for="bajo">Bajo</label>
+		<input type="radio" id="medio" name="escritoru" value="medio">
+		<label for="medio">Medio</label>
+		<input type="radio" id="alto" name="escritoru" value="alto">
+		<label for="alto">Alto</label>
+	</p>
+   </div>
+
+   <hr></hr>
+   <h3 style="font-style: italic;">Aptitudes personales</h3>
+   <p><b>Cuéntanos de ti</b></p>
+   <p></p>
+   <textarea id="aptitudes" name="aptitudes" rows="3" cols="40"></textarea>
+
+</body>
+</html>

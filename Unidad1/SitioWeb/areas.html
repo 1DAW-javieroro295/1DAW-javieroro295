@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <title>Práctica 8 - JavierO</title>
+     <body>
+           <h1>Longitud de la circunferencia</h1>
+            <h3>Mueva el indicador para conocer cómo varía.</h3>    
+            <form oninput="x.value=parseInt(a.value * 2 * 3.1416); y.value=parseInt(3.1416 * a.value * a.value); z.value=parseInt(a.value)">    
+                <p><b>Circulo</b></p>
+                Longitud de la base:     1 <input type="range" id="a" name="a" value="0"> 100    
+                <br><br>    
+                Valor del radio: <output name="z" for="a"> </output>
+                <br><br>    
+                Longitud de la circunferencia: <output name="x" for="a"> </output>
+                <br><br>    
+                Valor del área: <output name="y" for="a"> </output>  
+            </form>
+            <hr></hr>
+            <form oninput="x.value=parseInt(a.value * a.value); z.value=parseInt(a.value)">
+                <p><b>Cuadrado</b></p>
+                Longitud del lado:
+                1 <input type="range" id="a" name="a" value="0" min="1" max="100"> 100
+                <br><br>
+                Valor del lado: <output name="z" for="a"></output>
+                <br><br>
+                Área del cuadrado: <output name="x" for="a"></output>
+            </form>
+            <hr></hr>
+            <form oninput="x.value=parseInt(a.value * b.value); z.value=parseInt(a.value); y.value=parseInt(b.value)">
+                <p><b>Rectángulo</b></p>
+                Base:
+                1 <input type="range" id="a" name="a" value="0" min="1" max="100"> 100
+                <br><br>
+                Altura:
+                1 <input type="range" id="b" name="b" value="0" min="1" max="100"> 100
+                <br><br>
+                Valor de la base: <output name="z" for="a"></output>
+                <br><br>
+                Valor de la altura: <output name="y" for="b"></output>
+                <br><br>
+                Área del rectángulo: <output name="x" for="a b"></output>
+            </form>
+        </body>
+</html>
+
+
