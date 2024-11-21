@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones</title>
+
+    <style>
+        .apartadoA {
+            background-color: rgba(255, 0, 0, 0.8);opacity:0.6;
+        }
+        .apartadoB{
+            background-color: hsl(120, 100%, 75%);
+        }
+        .apartadoC{
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+        .apartadoD{
+            border-radius: 25px;
+            background: #73AD21;
+            padding: 22px;
+            width: 70px;
+            height: 22px;
+        }
+        table { 
+            box-shadow: 40px 20px 15px #888888; 
+        }
+            
+        td { 
+            border: 1px solid black; 
+            padding: 10px; 
+        }
+        
+        .apartadoG{
+            background-color:rgb(255,0,0);opacity:0.8;
+        }
+        .apartadoH {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: solid;
+            column-rule-color: rgb(31, 139, 31);
+            column-rule-style: double;
+            background-color: rgb(165, 57, 57);
+
+        }
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+            }
+
+        .apartadoI {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        </style>
+
+</head>
+    
+    <body>
+      <b><h1>a) Opacidad y transparencia</h1></b>
+      <h2 class="apartadoA">Javier</h2>
+      <b><h1>b) Tono, saturación e iluminosidad</h1></b>
+      <h2 class="apartadoB">Sevilla</h2>
+      <b><h1>c) Gradientes</h1></b>
+      <h2 class="apartadoC">Calle Entamador</h2>
+      <b><h1>d) Esquinas redondeadas</h1></b>
+      <h2 class="apartadoD">Javier</h2>
+      <b><h1>e) Sombras</h1></b>
+      <table border="5"; cellspacing="20">
+		<caption><b>tabla con separacion entre celdas</b></caption>
+		<tr> 
+		<td>fila1-celda1</td>
+		<td>fila1-celda2</td>
+		<td>fila1-celda3</td>
+		</tr>
+		<tr> 
+		<td>fila2-celda1</td>
+		<td>fila2-celda2</td>
+		<td>fila2-celda3</td>
+		</tr>
+	</table>
+    <b><h1>g) Opacidad</h1></b>
+    <h2 class="apartadoG">Ejemplo de opacidad 0.6</h2>
+    <b><h1>h) Columnas</h1></b>
+    <h2 class="apartadoH">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</h2>    
+    <b><h1>i) Animaciones</h1></b>
+    <h2 class="apartadoI">Ejemplo de opacidad 0.6</h2>
+</body>
+</html>
